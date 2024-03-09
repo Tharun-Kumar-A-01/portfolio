@@ -1,0 +1,69 @@
+.mainContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.textContainer {
+	margin-left: 70px;
+}
+
+.oops{
+	font-size: 55pt; 
+	background: linear-gradient(to right, var(--primary),var(--accent));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.notfoundtext{
+	font-family: "Space Grotesk";
+	margin-top: 10px;
+	font-size: 16pt;
+}
+
+.btn{
+
+}
+
+.svgContainer {
+
+	margin-right: 70px;
+	position: relative;
+	width: 300px;
+	height: 170px;
+}
+
+.svg404{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+}
+
+.svg888 {
+	
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 1;
+}
+
+@media (max-width: 770px) {
+	.svgContainer {
+		margin-right: 0px;
+	}
+}
+
+@media (max-width: 600px) {
+	.mainContainer{
+		justify-content: center;
+	}
+
+	.textContainer{
+		margin-left: 0px;
+	}
+
+	.svgContainer{
+		display: none;
+	}
+}

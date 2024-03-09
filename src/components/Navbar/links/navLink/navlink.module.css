@@ -1,0 +1,19 @@
+.container{
+	min-width: 100px;
+	padding: 10px;
+	border-radius: 20px;
+	font-weight: 500;
+	font-family: "Space Grotesk";
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+	border: 2px solid transparent;
+}
+
+.active{
+	background-color: var(--text);
+	color: var(--background);
+}
+
+.container:not(.active):hover{
+	border: 2px solid var(--text);
+}

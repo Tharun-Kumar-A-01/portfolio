@@ -1,9 +1,83 @@
 :root{
-  --bg : #0d0c22;
-  --bgSoft : #2d2b42;
-  --text : white;
-  --textSoft : #e2e2e2;
-  --btn : #3673fd;
+
+  --text: #e3effe;
+  --background: #0d1117;
+  --primary: #07b4ff;
+  --secondary: #144887;
+  --accent: #1771f9;
+  
+}
+/* 
+::-webkit-scrollbar {
+  scrollbar-color: var(--accent);
+  scrollbar-width: 5px;
+  scrollbar-track-color: var(--background);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-@media()
+body{
+  background-color: var(--background);
+  color: var(--text);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  background-color:  var(--background);
+  max-width: 1257px;
+  min-width: 100vw;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 1536px) {
+  .container {
+  width: 1366px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width:1024px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (max-width:768px ) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media (max-width:640px){
+  .container {
+    width: 475px;
+  }
+}
