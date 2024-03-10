@@ -2,8 +2,8 @@
 	background-color: var(--background);
 	height: 80px;
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: flex-end;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
