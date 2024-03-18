@@ -22,7 +22,14 @@
 }
 
 .btn{
-
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: linear-gradient(161deg, var(--primary),var(--accent));
+	font-family: "Space Grotesk";
+	font-weight: 700;
+	font-size: larger;
 }
 
 .svgContainer {
@@ -54,7 +61,7 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
 	.mainContainer{
 		justify-content: center;
 	}
