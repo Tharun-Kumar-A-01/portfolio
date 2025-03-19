@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Arial";
+    src: url("./fonts/Arial.woff") format("woff");
+    font-display: swap;
+}
+
+/* @font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter_Variable.ttf") format("truetype");
+    font-display: swap;
+} */
+
+:root{
+	--primary:#00a6ff;
+	--mouse-x:0px;
+	--mouse-y:0px;
+}
+*{
+	color: white;
+	margin: 0;
+	font-family:"Inter","JetBrains Mono", monospace;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: calc(100vw - 15px);
+	height: 100vh;
+	background: #000000;
+	overflow-x: hidden;
+}
+
+.section{
+	height: 100vh;
+	width: calc(100vw - 16px);
+}
+
+
+
+@media (width<=768px) {
+
+}
+
+@media (width<=620px) {
+
+}
+
+@media (width<=425px) {
+
+}
+
+@media (width<=320px) {
+
+}

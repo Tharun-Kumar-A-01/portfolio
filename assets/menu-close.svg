@@ -1,0 +1,23 @@
+<svg
+	width="221"
+	height="221"
+	viewBox="0 0 221 221"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<rect
+		x="22.9203"
+		width="279"
+		height="31"
+		transform="rotate(45 22.9203 0)"
+		fill="#ababab"
+	/>
+	<rect
+		x="0.898453"
+		y="198.181"
+		width="279"
+		height="31"
+		transform="rotate(-45 0.898453 198.181)"
+		fill="#ababab"
+	/>
+</svg>
