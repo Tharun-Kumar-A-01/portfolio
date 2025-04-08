@@ -17,7 +17,7 @@ menuIcon.addEventListener("click", (e) => {
 });
 
 // Close menu when clicking outside (Accessibility improvement)
-document.addEventListener("click", (e) => {
+menuIcon.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (!smMenu.contains(e.target) && e.target !== menuIcon) {

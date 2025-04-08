@@ -1,0 +1,8 @@
+.projects{
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    min-height: fit-content;
+    padding: 65px 0px;
+}
