@@ -1,0 +1,70 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 18px;
+    background: transparent;
+    padding: 28px;
+}
+
+.mail-input, .subject-input, .message-input {
+    background: rgb(13, 13, 13);
+    border: 1px solid rgb(65, 65, 65);
+    padding: 4px 8px;
+    border-radius: 6px;
+    width: calc(100% - 48px);
+    padding-left: 20px;
+    caret-color: greenyellow;
+}
+
+.mail-input:focus-visible, .subject-input:focus-visible, .message-input:focus-visible {
+    border: 1px solid rgb(149, 149, 149);
+    outline: none;
+}
+.message-input{
+    resize: none;
+    height: 6rem;
+    margin: 0;
+}
+.send-btn{
+    background: var(--primary);
+    border:none;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 8px 15px;
+    color: black;
+}
+.mail, .subject, .message {
+    border-radius: 8px;
+    padding: 3px;
+    position: relative;
+}
+#dollar{
+    position: absolute;
+    top: 27px;
+    left:10px;
+    color: greenyellow;
+}
+.message-input::-webkit-scrollbar{
+    width: 5px;
+}
+.message-input::-webkit-scrollbar-track{
+    background: transparent;
+}
+.message-input::-webkit-scrollbar-thumb{
+    background: #242424;
+    border-radius: 5px;
+}
+
+@media (width<=370px) {
+    .contact-form{
+        padding: 0;
+        padding-left: 5px;
+    }
+}

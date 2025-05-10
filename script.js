@@ -1,8 +1,9 @@
+const menuBtn = document.getElementById("menu-btn");
 const menuIcon = document.getElementById("menu-icon");
 const smMenu = document.getElementById("nav-sm");
 const copy_email_btn = document.getElementById("copy-email");
 
-menuIcon.addEventListener("click", (e) => {
+menuBtn.addEventListener("click", (e) => {
     e.preventDefault();
     
     if (menuIcon.getAttribute("src") === "./assets/menu-close.svg") {
@@ -17,7 +18,7 @@ menuIcon.addEventListener("click", (e) => {
 });
 
 // Close menu when clicking outside (Accessibility improvement)
-menuIcon.addEventListener("click", (e) => {
+menuBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (!smMenu.contains(e.target) && e.target !== menuIcon) {
@@ -27,7 +28,7 @@ menuIcon.addEventListener("click", (e) => {
 });
 
 // Keyboard Accessibility: Toggle menu with "Enter" key
-menuIcon.addEventListener("keydown", (e) => {
+menuBtn.addEventListener("keydown", (e) => {
     e.preventDefault();
 
     if (e.key === "Enter") {
