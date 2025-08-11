@@ -51,10 +51,10 @@
     font-size: 1.1rem;
 }
 .dollar{
-    position: absolute;
-    top: 27px;
-    left:10px;
-    color: greenyellow;
+    position: absolute !important;
+    top: 29px !important;
+    left:10px !important;
+    color: greenyellow !important;
 }
 .message-input::-webkit-scrollbar{
     width: 5px;
