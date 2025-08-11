@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 3rem;
 }
 .contact-form {
     display: flex;
@@ -16,11 +17,11 @@
 .mail-input, .subject-input, .message-input {
     background: rgb(13, 13, 13);
     border: 1px solid rgb(65, 65, 65);
-    padding: 4px 8px;
     border-radius: 6px;
     width: calc(100% - 48px);
-    padding-left: 20px;
+    padding: 4px 8px 4px 20px;
     caret-color: greenyellow;
+    font-size: 1.1rem;
 }
 
 .mail-input:focus-visible, .subject-input:focus-visible, .message-input:focus-visible {
@@ -34,6 +35,9 @@
 }
 .send-btn{
     background: var(--primary);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
     border:none;
     border-radius: 8px;
     width: fit-content;
@@ -44,8 +48,9 @@
     border-radius: 8px;
     padding: 3px;
     position: relative;
+    font-size: 1.1rem;
 }
-#dollar{
+.dollar{
     position: absolute;
     top: 27px;
     left:10px;
