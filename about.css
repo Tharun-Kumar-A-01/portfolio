@@ -1,0 +1,226 @@
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 65px 0;
+}
+
+.about-me-h1 {
+    font-family: "Perfect DOS VGA 437",serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 80%;
+    margin-bottom: 3rem;
+    padding: 0;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 90%;
+    min-height: 60vh;
+    max-height: 890px;
+    /* max-height: fit-content; */
+    max-width: 1200px;
+}
+
+.card {
+    background: var(--bg);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 30px;
+    /* border-radius: 10px; */
+    border: 2px solid var(--disabled);
+    min-height: 150px;
+    gap: 15px;
+}
+
+.upper {
+    position: relative;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+.skeleton-2,
+.skeleton-3,
+.skeleton-4,
+.skeleton-5 {
+    align-items: center;
+}
+
+.dot-bg {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#2c2c2c 1px, transparent 1px);
+    z-index: -1;
+    background-size: 16px 16px;
+}
+
+.b-tech-txt {
+    color: #f3f3f3;
+    width: fit-content;
+    margin: 0;
+    font-family: "VCR OSD Mono";
+}
+
+.it-txt {
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-family: "VCR OSD Mono",serif;
+    text-transform: uppercase;
+    width: fit-content;
+    padding-right: 5px;
+    margin: 0;
+}
+
+.intern-txt {
+    font-family: "VCR OSD Mono",serif;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 6px 20px;
+    color: black;
+    background: var(--primary);
+
+}
+
+.mern-svgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.mern {
+    font-size: 3.5rem;
+    font-family: "VCR OSD Mono",serif;
+    color: var(--text);
+    margin: 0 5px;
+    line-height: 1;
+}
+
+.react-logo {
+    transition: all 0.25s ease-in-out;
+    height: 3.5rem;
+}
+
+.skeleton-3:hover .react-logo {
+    rotate: 90deg;
+}
+
+.bento-icon {
+    font-size: x-small;
+    margin-bottom: 5px;
+}
+
+.bento-title {
+    font-size: 1.2rem;
+    font-family: "Perfect DOS VGA 437",serif;
+    margin: 0 0 6px;
+}
+
+.bento-desc {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #b4b4b4;
+}
+
+.accounts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.account {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: "Perfect DOS VGA 437",sans-serif;
+    background: var(--bg);
+    border: var(--disabled) 2px solid;
+    transition: 0.1s all linear;
+}
+
+.account:hover {
+    border-color: var(--primary);
+}
+
+.copy-field {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#email {
+    font-size: 1.2rem;
+    border: 2px solid var(--disabled);
+    padding: 10px;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "VCR OSD Mono",sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#copy-email {
+    border: 3px solid var(--disabled);
+    background: var(--disabled);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+@media (width<=1135px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        max-height: fit-content;
+    }
+
+    .wide {
+        grid-column: span 1;
+    }
+    .card {
+        width: 70vw;
+        max-width: 450px;
+    }
+}

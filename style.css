@@ -2,7 +2,7 @@
     --primary: #adff2f;
     --secondary: #628723;
     --foreground: #e2e2e2;
-    --background: #111111;
+    --background: #070707;
     --fg: var(--foreground);
     --bg: var(--background);
     --text: var(--foreground);
@@ -39,20 +39,21 @@ a:visited {
     flex-direction: row;
     height: 64px;
     align-items: center;
+    width: 100vw;
     justify-content: center;
-    width: fit-content;
+    /* width: fit-content; */
     padding: 0 28px;
     background: var(--bg);
     position: fixed;
-    border: var(--disabled) 1px dashed;
+    border-bottom: var(--disabled) 1px dashed;
     gap: 32px;
     border-radius: 3px;
-    top: 12px;
+    top: 0px;
     z-index: 3;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.3s ease-in-out; 
-    box-shadow: #0f0f0f 0 0 26px 20px;
+    /* box-shadow: #0f0f0f 0 0 26px 20px; */
 }
 
 #navtitle {
@@ -224,7 +225,7 @@ section {
 }
 @media (width<468px) {
     #hero-title {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         line-height: 1.9rem;
     }
     #hero-title span {
