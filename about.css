@@ -8,7 +8,7 @@
 }
 
 .about-me-h1 {
-    font-family: "Perfect DOS VGA 437",serif;
+    font-family: "Perfect DOS VGA 437",monospace;
     font-size: 3rem;
     text-transform: uppercase;
     width: 80%;
@@ -80,13 +80,14 @@
     color: #f3f3f3;
     width: fit-content;
     margin: 0;
-    font-family: "VCR OSD Mono";
+    padding-left: 5px;
+    font-family: "VCR OSD Mono",monospace;
 }
 
 .it-txt {
     font-size: 2.5rem;
     color: var(--primary);
-    font-family: "VCR OSD Mono",serif;
+    font-family: "VCR OSD Mono",monospace;
     text-transform: uppercase;
     width: fit-content;
     padding-right: 5px;
@@ -94,7 +95,7 @@
 }
 
 .intern-txt {
-    font-family: "VCR OSD Mono",serif;
+    font-family: "VCR OSD Mono",monospace;
     font-size: 2.6rem;
     text-transform: uppercase;
     width: fit-content;
@@ -114,7 +115,7 @@
 
 .mern {
     font-size: 3.5rem;
-    font-family: "VCR OSD Mono",serif;
+    font-family: "VCR OSD Mono",monospace;
     color: var(--text);
     margin: 0 5px;
     line-height: 1;
@@ -136,7 +137,7 @@
 
 .bento-title {
     font-size: 1.2rem;
-    font-family: "Perfect DOS VGA 437",serif;
+    font-family: "Perfect DOS VGA 437",monospace;
     margin: 0 0 6px;
 }
 
@@ -165,7 +166,7 @@
     gap: 8px;
     font-size: 1.2rem;
     font-weight: normal;
-    font-family: "Perfect DOS VGA 437",sans-serif;
+    font-family: "Perfect DOS VGA 437",monospace;
     background: var(--bg);
     border: var(--disabled) 2px solid;
     transition: 0.1s all linear;
@@ -189,7 +190,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "VCR OSD Mono",sans-serif;
+    font-family: "VCR OSD Mono",monospace;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
