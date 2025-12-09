@@ -1,8 +1,9 @@
 :root {
-    --primary: #adff2f;
+    --primary: #9acd32;
+    /* --primary: #adff2f; */
     --secondary: #628723;
     --foreground: #e2e2e2;
-    --background: #070707;
+    --background: #0f0f0f;
     --fg: var(--foreground);
     --bg: var(--background);
     --text: var(--foreground);
@@ -142,12 +143,20 @@ section {
 }
 
 #dev-text{
-    padding: 5px 18px 6px;
+    padding: 5px 0 4px;
+    width: 100%;
+    max-width: 615px;
     margin: 0;
     color: var(--bg);
+    /* background-color: var(--primary); */
+    background: repeating-linear-gradient( -90deg, var(--primary), var(--primary) 2px, transparent 2px, transparent 6px );
+    font-family: "Fira Code",monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#dev-text span {
+    padding: 5px 8px 4px;
     background-color: var(--primary);
-    font-family: "VCR OSD Mono",monospace;
-    font-size: 1.3rem;
 }
 
 #linkedin-button {
@@ -162,6 +171,15 @@ section {
     #hero-img {
         display: none;
         position: static;
+    }
+
+    #hero-section::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background: url("./assets/thiruvalluvar.svg");
     }
 
     #thirukkural {
@@ -224,7 +242,11 @@ section {
     }
     #dev-text{
         font-size: 0.8rem;
-        padding: 2px 3px;
+        padding: 2px 0;
+        width: 90%;
+    }
+    #dev-text span {
+        padding: 2px 4px;
     }
 }
 @media (width<468px) {

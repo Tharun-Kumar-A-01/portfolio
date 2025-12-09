@@ -136,8 +136,8 @@
 }
 
 .bento-title {
-    font-size: 1.2rem;
-    font-family: "Perfect DOS VGA 437",monospace;
+    font-size: 1rem;
+    font-family: "Fira Code",monospace;
     margin: 0 0 6px;
 }
 
@@ -164,9 +164,9 @@
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: normal;
-    font-family: "Perfect DOS VGA 437",monospace;
+    font-family: "Fira Code",monospace;
     background: var(--bg);
     border: var(--disabled) 2px solid;
     transition: 0.1s all linear;

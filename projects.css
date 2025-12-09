@@ -24,8 +24,9 @@
 }
 
 .project-name{
-    font-family: "Perfect DOS VGA 437",monospace;
+    font-family: "Fira Code",monospace;
     margin: 10px 0;
+    color: var(--primary);
 }
 
 .project-desc {
@@ -42,7 +43,7 @@
     font-weight: bold;
     padding: 24px;
     border: 2px solid var(--disabled);
-    min-height: 150px;
+    min-height: 250px;
     gap: 15px;
     width: 100%;
     max-width: 390px;
@@ -66,14 +67,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(transparent, #070707d3 30%, #070707 70%);
+    background: radial-gradient(transparent, #0f0f0fd3 30%, #0f0f0f 70%);
     z-index: 0;
 }
 .tech-n-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin-top: 5rem;
 }
 .techs {
@@ -96,6 +96,11 @@
     text-decoration:underline;
     text-decoration-thickness: 0.1px;
     color: var(--primary);
+    padding-top: 12px;
+    /* width: 100%; */
+    /* text-align: end; */
+    width: fit-content;
+    align-self: flex-end;
 }
 
 .project-link:visited {
