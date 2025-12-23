@@ -1,7 +1,6 @@
 :root {
-    --primary: #9acd32;
-    /* --primary: #adff2f; */
-    --secondary: #628723;
+    --primary: #7bee5e;
+    --secondary: #77ca62;
     --foreground: #e2e2e2;
     --background: #0f0f0f;
     --fg: var(--foreground);
@@ -66,7 +65,7 @@ a:visited {
 
 button {
     height: fit-content;
-    padding: 8px 18px;
+    padding: 8px 18px 10px;
     background-color: var(--bg);
     color: var(--text);
     border: var(--text) 2px solid;
@@ -106,7 +105,7 @@ button:hover {
     margin: 0;
     font-family: "Noto Serif Tamil", serif;
     /*font-style: italic;*/
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #right-side {
@@ -126,15 +125,17 @@ section {
 }
 
 #hero-title {
-    font-size: 5.6rem;
+    font-size: 2.4rem;
     margin-bottom: 32px;
     margin-top: 12px;
-    font-family: "Perfect DOS VGA 437",monospace;
-    line-height: 5.4rem;
+    font-family: "Fira Code",monospace;
+    line-height: 2.6rem;
 }
 
 #hero-title span {
-    font-family: "Perfect DOS VGA 437",monospace;
+    font-size: 5.6rem;
+    line-height: 5.4rem;
+    font-family: "Fira Code",monospace;
     
 }
 #hero-title span::selection {
@@ -148,14 +149,14 @@ section {
     max-width: 615px;
     margin: 0;
     color: var(--bg);
-    /* background-color: var(--primary); */
-    background: repeating-linear-gradient( -90deg, var(--primary), var(--primary) 2px, transparent 2px, transparent 6px );
-    font-family: "Fira Code",monospace;
+    background: repeating-linear-gradient( -90deg, var(--primary), var(--primary) 2px, transparent 2px, transparent 8px );
+    font-style: italic;
     font-size: 1.1rem;
     font-weight: 600;
 }
 #dev-text span {
-    padding: 5px 8px 4px;
+    padding: 5px 8px 5px;
+    font-family: "JetBrains Mono",monospace;
     background-color: var(--primary);
 }
 
@@ -166,7 +167,23 @@ section {
 #linkedin-button:hover {
     background-color: var(--primary);
 }
-@media (width<1245px) {
+
+@media (width<1475px) {
+    #hero-title{
+        font-size: 2.0rem;
+        line-height: 1.8rem;
+        margin-bottom: 16px;
+    }
+    #hero-title span {
+        font-size: 4.6rem;
+        line-height: 4.4rem;
+    }
+    #hero-img {
+        width:80%;
+    }
+}
+
+@media (width<1255px) {
 
     #hero-img {
         display: none;
@@ -185,9 +202,9 @@ section {
     #thirukkural {
         top: 0;
         width: calc(100% - 40px);
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         padding: 45px 20px 0 20px;
-        max-width: 450px;
+        max-width: 536px;
     }
 
     #right-side {
@@ -212,6 +229,17 @@ section {
     }
 }
 
+@media (width<700px) {
+    #hero-title {
+        font-size: 1.6rem;
+        line-height: 1.4rem;
+    }
+    #left-side {
+        padding-left: 1.5rem;
+    }
+
+}
+
 @media (height<675px) {
 
     #hero-img {
@@ -230,18 +258,11 @@ section {
 
 }
 
-@media (width<1475px) {
-    #hero-title{
-        font-size: 4.6rem;
-    }
-}
+
 @media (width<675px) {
-    #hero-title {
-        font-size: 3.9rem;
-        line-height: 3.2rem;
-    }
+
     #dev-text{
-        font-size: 0.8rem;
+        font-size: 1.0rem;
         padding: 2px 0;
         width: 90%;
     }
@@ -249,6 +270,20 @@ section {
         padding: 2px 4px;
     }
 }
+
+@media (width<576px) {
+
+    #thirukkural {
+        font-size: 0.9rem;
+        max-width: 430px;
+    }
+
+    #navbar {
+        padding: 0 22px;
+    }
+
+}
+
 @media (width<468px) {
     #hero-title {
         font-size: 1.6rem;
@@ -259,22 +294,9 @@ section {
         line-height: 5rem;
     }
 }
-@media (width<530px) {
 
+@media (width<385px) {
     #thirukkural {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
-
-    #navbar {
-        padding: 0 22px;
-    }
-
-}
-
-@media (width<700px) {
-
-    #left-side {
-        padding-left: 1.5rem;
-    }
-
 }
