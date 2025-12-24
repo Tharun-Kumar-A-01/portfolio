@@ -20,12 +20,13 @@ copy_email_btn.addEventListener("click", (e)=>{
 })
 
 const colors = [
-  "#e74c3c",
-  "#8e44ad",
-  "#3498db",
-  "#16a085",
-  "#f39c12",
-  "#d35400"
+    "#16a085",
+    "#f39c12",
+    "#8e44ad",
+    "#3498db",
+    "#16a085",
+    "#e74c3c",
+    "#f39c12"
 ];
 
 const elements = document.querySelectorAll("p.s3tech");
@@ -34,11 +35,11 @@ console.log(elements);
 const shuffledColors = [...colors];
 
 // Fisher–Yates shuffle
-for (let i = shuffledColors.length - 1; i > 0; i--) {
-  const j = Math.floor(Math.random() * (i + 1));
-  [shuffledColors[i], shuffledColors[j]] =
-    [shuffledColors[j], shuffledColors[i]];
-}
+// for (let i = shuffledColors.length - 1; i > 0; i--) {
+//   const j = Math.floor(Math.random() * (i + 1));
+//   [shuffledColors[i], shuffledColors[j]] =
+//     [shuffledColors[j], shuffledColors[i]];
+// }
 
 // apply unique colors
 elements.forEach((el, i) => {
