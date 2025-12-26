@@ -173,55 +173,7 @@ section {
 	flex-direction: row;
 	gap: 18px;
 }
-#hero-image-cont {
-	z-index: -1;
-	margin: 2rem 0 3rem 10%;
-	transform: rotate(45deg);
-	overflow: hidden;
-	height: 78px;
-	width: 78px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid var(--primary);
-}
-#hero-image {
-	width: 84px;
-	margin-top: 22px;
-	margin-left: 16%;
-	flex-shrink: 0;
-	background-image: url("./assets/image.png");
-	height: 84px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	transform: rotate(-45deg);
-	z-index: 3;
-}
-#hero-image-bg {
-	width: 200%;
-	background:repeating-linear-gradient(0deg, var(--secondary), var(--secondary) 2px, var(--bg) 2px, var(--bg) 4px);
-	opacity: 0.6;
-	height: 200%;
-	position: absolute;
-	transform: rotate(-45deg);
-	z-index: 1;
-}
-#hero-image-overlay {
-	width: 84px;
-	height: 84px;
-	margin-top: 22px;
-	margin-left: 16%;
-	flex-shrink: 0;
-	position: absolute;
-	background-color: var(--primary);
-	mask-image: url('./assets/image.png');
-	mask-position: center;
-	mask-size: 110%;
-	z-index: 2;
-	mask-repeat: no-repeat;
-	transform: rotateX(12deg) rotateY(-20deg) rotateZ(-45deg);
-}
+
 @media (width<1475px) {
 	#hero-title{
 		font-size: 2.0rem;
