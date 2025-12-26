@@ -90,19 +90,6 @@ button:hover {
 	height: 100vh;
 }
 
-#wisher {
-	position: absolute;
-	right: 50%;
-	transform: translateX(50%);
-	bottom: 40px;
-	border-radius: 6px;
-	padding: 4px 12px;
-	background: #7bee5e25;
-	border: 1px solid var(--primary);
-	z-index: 2;
-	font-size: 0.8rem;
-}
-
 #left-side {
 	width: calc(50% - 5rem);
 	height: 100vh;
@@ -191,20 +178,20 @@ section {
 	margin: 2rem 0 3rem 10%;
 	transform: rotate(45deg);
 	overflow: hidden;
-	height: 128px;
-	width: 128px;
+	height: 78px;
+	width: 78px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 2px solid var(--primary);
 }
 #hero-image {
-	width: 158px;
+	width: 84px;
 	margin-top: 22px;
-	margin-left: 11%;
+	margin-left: 16%;
 	flex-shrink: 0;
 	background-image: url("./assets/image.png");
-	height: 158px;
+	height: 84px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -221,10 +208,10 @@ section {
 	z-index: 1;
 }
 #hero-image-overlay {
-	width: 158px;
-	height: 158px;
+	width: 84px;
+	height: 84px;
 	margin-top: 22px;
-	margin-left: 11%;
+	margin-left: 16%;
 	flex-shrink: 0;
 	position: absolute;
 	background-color: var(--primary);
@@ -330,11 +317,13 @@ section {
 
 	#dev-text{
 		font-size: 1.0rem;
-		padding: 4px 0;
+		padding: 0px 0;
 		width: 90%;
 	}
 	#dev-text span {
 		padding: 4px;
+		min-height: 20px;
+		display: inline-block;
 	}
 }
 
