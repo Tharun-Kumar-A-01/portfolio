@@ -10,7 +10,7 @@
 }
 
 * {
-	font-family: "Fira Code", monospace;
+	font-family: "Ioskeley Mono", monospace;
 	/* font-family: "JetBrains Mono", monospace; */
 }
 
@@ -20,7 +20,7 @@ body {
 	background: var(--bg);
 	color: var(--text);
 	/* font-family: "JetBrains Mono", monospace; */
-	font-family: "Fira Code", monospace;
+	font-family: "Ioskeley Mono", monospace;
 	/* overflow-x: hidden; */
 }
 p,a {
@@ -126,16 +126,19 @@ section {
 
 #hero-title {
 	font-size: 2.4rem;
-	margin-bottom: 32px;
-	margin-top: 12px;
-	font-family: "Fira Code",monospace;
+	margin-bottom: 6px;
+	margin-top: 22px;
+	font-family: "Ioskeley Mono",monospace;
 	line-height: 2.6rem;
 }
 
 #hero-title span {
 	font-size: 5.6rem;
-	line-height: 5.4rem;
-	font-family: "Fira Code",monospace;
+	line-height: 5rem;
+	height: fit-content;
+	letter-spacing: -5px;
+	font-family: "Ioskeley Mono",monospace;
+	text-transform: uppercase;
 	
 }
 #hero-title span::selection {
@@ -150,14 +153,26 @@ section {
 	margin: 0;
 	color: var(--bg);
 	background: repeating-linear-gradient( -90deg, var(--primary), var(--primary) 2px, var(--bg) 2px, var(--bg) 8px );
-	font-style: italic;
+	/* font-style: italic; */
 	font-size: 1.1rem;
-	font-weight: 600;
+	font-weight: bold;
 }
 #dev-text span {
 	padding: 5px 8px 5px;
-	font-family: "JetBrains Mono",monospace;
+	font-family: "Ioskeley Mono",monospace;
+	text-transform: uppercase;
 	background-color: var(--primary);
+}
+
+#slogan-text {
+	font-weight: normal;
+	margin: 0 0 28px 8px;
+	color: var(--text);
+	/* background: var(--text); */
+	/* padding: 2px 6px; */
+	font-weight: 500;
+	font-family: "Baskervville",monospace;
+	font-style: italic;
 }
 
 #linkedin-button {

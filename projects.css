@@ -24,7 +24,8 @@
 }
 
 .project-name{
-    font-family: "Fira Code",monospace;
+    font-family: "Ioskeley Mono",monospace;
+    letter-spacing: -1px;
     margin: 10px 0;
     color: var(--primary);
 }
@@ -102,7 +103,25 @@
     width: fit-content;
     align-self: flex-end;
 }
-
+.project-link button {
+    color: var(--bg);
+    border: var(--text) 2px solid;
+    background: var(--text);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: "VCR OSD Mono",monospace;
+    letter-spacing: 1px;
+}
+.project-link button:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+/* 
 .project-link:visited {
     color: var(--primary);
 }
+
+.project-link:hover {
+    color: var(--secondary);
+} */
