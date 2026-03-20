@@ -65,14 +65,15 @@ a:visited {
 
 button {
 	height: fit-content;
-	padding: 8px 18px 9px;
+	padding: 8px 18px;
 	background-color: var(--bg);
 	color: var(--text);
-	border: var(--text) 2px solid;
+	border: var(--text) 1px solid;
 	cursor: pointer;
 	text-transform: uppercase;
+	font-weight: bold;
 	font-size: 1rem;
-	font-family: "VCR OSD Mono",monospace;
+	font-family: "Departure Mono",monospace;
 	letter-spacing: 1px;
 }
 
@@ -103,9 +104,21 @@ button:hover {
 #thirukkural {
 	position: absolute;
 	margin: 0;
-	font-family: "Noto Serif Tamil", serif;
+
+}
+
+.thirukkural {
 	/*font-style: italic;*/
 	font-size: 1.2rem;
+	margin: 0 0 16px;
+}
+
+#thirukkural-tamil {
+	font-family: "Noto Serif Tamil", serif;
+}
+#thirukkural-english {
+	font-family: "Source Serif 4";
+	font-style: italic;
 }
 
 #right-side {
@@ -128,7 +141,7 @@ section {
 	font-size: 2.4rem;
 	margin-bottom: 6px;
 	margin-top: 22px;
-	font-family: "Ioskeley Mono",monospace;
+	font-family: "Departure Mono",monospace;
 	line-height: 2.6rem;
 }
 
@@ -137,7 +150,7 @@ section {
 	line-height: 5rem;
 	height: fit-content;
 	letter-spacing: -5px;
-	font-family: "Ioskeley Mono",monospace;
+	font-family: "Departure Mono",monospace;
 	text-transform: uppercase;
 	
 }
@@ -165,13 +178,14 @@ section {
 }
 
 #slogan-text {
-	font-weight: normal;
+	/* font-size: larger; */
+	/* font-weight: normal; */
 	margin: 0 0 28px 8px;
 	color: var(--text);
 	/* background: var(--text); */
 	/* padding: 2px 6px; */
-	font-weight: 500;
-	font-family: "Baskervville",monospace;
+	/* font-weight: 600; */
+	font-family: "Source Serif 4",monospace;
 	font-style: italic;
 }
 
@@ -193,7 +207,8 @@ section {
 	#hero-title{
 		font-size: 2.0rem;
 		line-height: 1.8rem;
-		margin-bottom: 16px;
+		margin-bottom: 0px;
+		padding-right: 12px;
 	}
 	#hero-title span {
 		font-size: 4.6rem;
@@ -222,15 +237,20 @@ section {
 
 	#thirukkural {
 		top: 0;
-		width: calc(100% - 40px);
+		width: calc(100% - 20px);
 		font-size: 1.1rem;
-		padding: 45px 20px 0 20px;
+		/* padding: 45px 20px 0 20px; */
 		max-width: 536px;
+	}
+
+	.thirukkural {
+		font-size: 1.1rem;
+
 	}
 
 	#right-side {
 		position: absolute;
-		width: 100%;
+		width: 96%;
 		height: fit-content;
 		padding: 0;
 		margin: 0;
@@ -270,11 +290,11 @@ section {
 	}
 
 	#right-side {
-		align-items: start;
+		align-items: center;
 	}
 
 	#thirukkural {
-		align-self: center;
+		align-items: center;
 	}
 
 }
@@ -297,8 +317,17 @@ section {
 @media (width<576px) {
 
 	#thirukkural {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.thirukkural {
 		font-size: 0.9rem;
 		max-width: 430px;
+	}
+
+	#thirukkural-english {
+		font-size: 1.1rem;
 	}
 
 	#navbar {

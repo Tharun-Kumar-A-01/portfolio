@@ -8,7 +8,8 @@
 }
 
 .projects-h1 {
-    font-family: "VCR OSD MONO",monospace;
+    font-family: "Departure Mono",monospace;
+	letter-spacing: -2px;
     font-size: 3rem;
     text-transform: uppercase;
     width: 80%;
@@ -24,10 +25,12 @@
 }
 
 .project-name{
-    font-family: "Ioskeley Mono",monospace;
+    font-family: "Departure Mono",monospace;
     letter-spacing: -1px;
     margin: 10px 0;
     color: var(--primary);
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .project-desc {
@@ -43,7 +46,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     padding: 24px;
-    border: 2px solid var(--disabled);
+    border: 1px solid var(--disabled);
     min-height: 250px;
     gap: 15px;
     width: 100%;
@@ -105,16 +108,15 @@
 }
 .project-link button {
     color: var(--bg);
-    border: var(--text) 2px solid;
+    border: none;
     background: var(--text);
     cursor: pointer;
     text-transform: uppercase;
     font-size: 0.9rem;
-    font-family: "VCR OSD Mono",monospace;
+    font-family: "Departure Mono",monospace;
     letter-spacing: 1px;
 }
 .project-link button:hover {
-    border-color: var(--primary);
     background: var(--primary);
 }
 /* 
@@ -125,3 +127,16 @@
 .project-link:hover {
     color: var(--secondary);
 } */
+
+@media (width<445px) {
+	.projects-h1 {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media (width<555px) {
+	.projects-container {
+		width: 90%;
+	}
+}
