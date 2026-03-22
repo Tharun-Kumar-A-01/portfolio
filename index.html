@@ -18,6 +18,34 @@
 		<a href="#projects-section"><p>Projects</p></a>
 		<a href="https://sudo-ers.github.io/blog"><p>Blog</p></a>
 	</nav>
+	<style>
+		@font-face {
+			font-family: 'Ioskeley Mono';
+			src: url('./fonts/Ioskeley_Mono/IoskeleyMono_Regular_compressed.woff2') format('woff2');
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Departure Mono';
+			src: url('./fonts/Departure_Mono/DepartureMono.woff2') format('woff2');
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Source Serif 4';
+			src: url('./fonts/Source_Serif_4/SourceSerif4_Italic_compressed.woff2') format('woff2');
+			font-style: italic;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Noto Serif Tamil';
+			src: url('./fonts/Noto_Serif_Tamil/NotoSerifTamil_Regular_compressed.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+	</style>
 	<section id="hero-section">
 		<div id="left-side">
 			<!-- <p id="dev-text"><span>software engineer</span></p> -->
@@ -30,7 +58,7 @@
 		</div>
 
 		<div id="right-side">
-			<img src="./assets/thiruvalluvar.svg" id="hero-img" />
+			<img loading="lazy" src="./assets/thiruvalluvar.svg" id="hero-img" />
 			<div id="thirukkural">
 				<p class="thirukkural" id="thirukkural-tamil">தெய்வத்தான் ஆகா தெனினும் முயற்சிதன்<br>மெய்வருத்தக் கூலி தரும். <br><span style="display:block;width:100%;text-align: end;color:var(--primary);font-family: 'Noto Serif Tamil', serif;">- குறள் <span style="font-family: 'Ioskeley Mono',monospace;letter-spacing:-1px;">619</span></span></p>
 				<p class="thirukkural" id="thirukkural-english">&ldquo;Even though God be against, <br>Effort is bound to pay the wages of labour.&rdquo;</p>
@@ -311,7 +339,8 @@
 	<section id="projects-section">
 		<h2 class="projects-h1">Projects</h2>
 		<div class="projects-container">
-			<div class="project" style="background-image:url('./assets/previews/sudoers_blog.png');">
+			<div class="project">
+				<img loading="lazy" alt="project-preview" src="./assets/previews/sudoers_blog.png" class="project-bg" />
 				<div class="bg-overlay"></div>
 				<div class="inner-cont">
 				<div>
@@ -319,15 +348,16 @@
 					<p class="project-desc">A simple blog page with hugo</p>
 				</div>
 				<div class="tech-n-link"><ul class="techs">
-					<li title="Hugo" class="tech-it"><img src="./assets/icons/hugo.svg" alt="hugo" width="26px"></li>
-					<li title="HTML" class="tech-it"><img src="./assets/icons/html.svg" alt="html" width="24px"></li>
-					<li title="CSS" class="tech-it"><img src="./assets/icons/css.svg" alt="css" width="26px"></li>
+					<li title="Hugo" class="tech-it"><img loading="lazy" src="./assets/icons/hugo.svg" alt="hugo" width="26px"></li>
+					<li title="HTML" class="tech-it"><img loading="lazy" src="./assets/icons/html.svg" alt="html" width="24px"></li>
+					<li title="CSS" class="tech-it"><img loading="lazy" src="./assets/icons/css.svg" alt="css" width="26px"></li>
 				</ul>
 				<a href="https://sudo-ers.github.io/blog" class="project-link"><button>View</button></a>
 				</div>
 				</div>
 			</div>
-			<div class="project" style="background-image:url('./assets/previews/fosstamilan.png');">
+			<div class="project">
+				<img loading="lazy" alt="project-preview" src="./assets/previews/fosstamilan.png" class="project-bg" />
 				<div class="bg-overlay"></div>
 				<div class="inner-cont">
 				<div>
@@ -335,15 +365,16 @@
 					<p class="project-desc">Event listing website for tech events at Tamil Nadu</p>
 				</div>
 				<div class="tech-n-link"><ul class="techs">
-					<li title="HTML" class="tech-it"><img src="./assets/icons/html.svg" alt="html" width="24px"></li>
-					<li title="CSS" class="tech-it"><img src="./assets/icons/css.svg" alt="css" width="26px"></li>
-					<li title="JavaScript" class="tech-it"><img src="./assets/icons/js.svg" alt="js" width="26px"></li>
+					<li title="HTML" class="tech-it"><img  loading="lazy" src="./assets/icons/html.svg" alt="html" width="24px"></li>
+					<li title="CSS" class="tech-it"><img  loading="lazy" src="./assets/icons/css.svg" alt="css" width="26px"></li>
+					<li title="JavaScript" class="tech-it"><img  loading="lazy" src="./assets/icons/js.svg" alt="js" width="26px"></li>
 				</ul>
 				<a href="https://sudo-ers.github.io/events" class="project-link"><button>View</button></a>
 				</div>
 				</div>
 			</div>
-			<div class="project" style="background-image:url('./assets/previews/simpletab.png');">
+			<div class="project">
+				<img loading="lazy" alt="project-preview" src="./assets/previews/simpletab.png" class="project-bg" />
 				<div class="bg-overlay"></div>
 				<div class="inner-cont">
 				<div>
@@ -351,15 +382,16 @@
 					<p class="project-desc">A minimal new tab page extension for browser</p>
 				</div>
 				<div class="tech-n-link"><ul class="techs">
-					<li title="HTML" class="tech-it"><img src="./assets/icons/html.svg" alt="html" width="24px"></li>
-					<li title="CSS" class="tech-it"><img src="./assets/icons/css.svg" alt="css" width="26px"></li>
-					<li title="JavaScript" class="tech-it"><img src="./assets/icons/js.svg" alt="js" width="26px"></li>
+					<li title="HTML" class="tech-it"><img  loading="lazy" src="./assets/icons/html.svg" alt="html" width="24px"></li>
+					<li title="CSS" class="tech-it"><img  loading="lazy" src="./assets/icons/css.svg" alt="css" width="26px"></li>
+					<li title="JavaScript" class="tech-it"><img  loading="lazy" src="./assets/icons/js.svg" alt="js" width="26px"></li>
 				</ul>
 				<a href="https://github.com/Tharun-Kumar-A-01/SimpleTab" class="project-link"><button>View</button></a>
 				</div>
 				</div>
 			</div>
-			<div class="project" style="background-image:url('./assets/previews/lms.png');">
+			<div class="project">
+				<img loading="lazy" alt="project-preview" src="./assets/previews/lms.png" class="project-bg" />
 				<div class="bg-overlay"></div>
 				<div class="inner-cont">
 				<div>
@@ -367,10 +399,10 @@
 					<p class="project-desc">Learning Management System built with MERN stack</p>
 				</div>
 				<div class="tech-n-link"><ul class="techs">
-					<li title="React.js" class="tech-it"><img src="./assets/icons/react.svg" alt="html" width="24px"></li>
-					<li title="Express.js" class="tech-it"><img src="./assets/icons/express.svg" alt="css" width="26px"></li>
-					<li title="MongoDB" class="tech-it"><img src="./assets/icons/mongodb.svg" alt="js" width="26px"></li>
-					<li title="Node.js" class="tech-it"><img src="./assets/icons/nodejs.svg" alt="js" width="26px"></li>
+					<li title="React.js" class="tech-it"><img  loading="lazy" src="./assets/icons/react.svg" alt="html" width="24px"></li>
+					<li title="Express.js" class="tech-it"><img  loading="lazy" src="./assets/icons/express.svg" alt="css" width="26px"></li>
+					<li title="MongoDB" class="tech-it"><img  loading="lazy" src="./assets/icons/mongodb.svg" alt="js" width="26px"></li>
+					<li title="Node.js" class="tech-it"><img  loading="lazy" src="./assets/icons/nodejs.svg" alt="js" width="26px"></li>
 				</ul>
 				<a href="https://lms-team-48.netlify.app/" class="project-link"><button>View</button></a>
 				</div>
@@ -383,7 +415,7 @@
 
 		<div class="certificates-container">
 			<a class="certificate-link" href="assets/certificates/Infosys_Java.jpg" target="_blank" referrerpolicy="no-referrer">
-				<img class="certificate-thumb" src="assets/certificates/Infosys_Java_thumb.jpg" >
+				<img  loading="lazy" class="certificate-thumb" src="assets/certificates/Infosys_Java_thumb.jpg" >
 				<div class="certificate-details">
 					<p class="certificate-course-name">Programming in Java</p>
 					<p class="certificate-issuer">Infosys Springboard</p>
@@ -391,34 +423,7 @@
 			</a>
 		</div>
 	</section>
-	<style>
-		@font-face {
-			font-family: 'Ioskeley Mono';
-			src: url('./fonts/Ioskeley_Mono/IoskeleyMono_Regular.woff2') format('woff2');
-			font-display: swap;
-		}
 
-		@font-face {
-			font-family: 'Departure Mono';
-			src: url('./fonts/Departure_Mono/DepartureMono.woff2') format('woff2');
-			font-display: swap;
-		}
-
-		@font-face {
-			font-family: 'Source Serif 4';
-			src: url('./fonts/Source_Serif_4/SourceSerif4_Italic.woff2') format('woff2');
-			font-style: italic;
-			font-display: swap;
-		}
-
-		@font-face {
-			font-family: 'Noto Serif Tamil';
-			src: url('./fonts/Noto_Serif_Tamil/NotoSerifTamil_Regular.woff2') format('woff2');
-			font-weight: normal;
-			font-style: normal;
-			font-display: swap;
-		}
-	</style>
 
 </body>
 </html>

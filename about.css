@@ -9,7 +9,7 @@
 
 .about-me-h1 {
 	letter-spacing: -2px;
-    font-family: "Departure Mono",monospace;
+    font-family: "Departure Mono","Ioskeley Mono",monospace;
     font-size: 3rem;
     text-transform: uppercase;
     width: 80%;
@@ -82,13 +82,13 @@
     width: fit-content;
     margin: 0;
     padding-left: 5px;
-    font-family: "Departure Mono",monospace;
+    font-family: "Departure Mono","Ioskeley Mono",monospace;
 }
 
 .it-txt {
     font-size: 2.5rem;
     color: var(--primary);
-    font-family: "Departure Mono",monospace;
+    font-family: "Departure Mono","Ioskeley Mono",monospace;
     text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: -2px;
@@ -98,7 +98,7 @@
 }
 
 .intern-txt {
-    font-family: "Departure Mono",monospace;
+    font-family: "Departure Mono","Ioskeley Mono",monospace;
 	font-weight: bold;
 	letter-spacing: -2px;
     font-size: 2.6rem;
@@ -140,7 +140,7 @@
     border: #4b4b4b 1px solid;
     font-size: 0.7rem;
     background-color: var(--bg);
-	font-family: "Departure Mono";
+	font-family: "Departure Mono","Ioskeley Mono",monospace;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -150,7 +150,7 @@
     margin-bottom: 5px;
 }
 .college-name-text {
-    font-family: "Source Serif 4";
+    font-family: "Source Serif 4",serif;
     color: var(--text);
     margin: 4px 0 0 10px;
     font-style: italic;

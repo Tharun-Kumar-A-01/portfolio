@@ -8,7 +8,7 @@
 }
 
 .certificates-h1 {
-    font-family: "Departure Mono",monospace;
+    font-family: "Departure Mono","Ioskeley Mono",monospace;
     font-size: 3rem;
 	letter-spacing: -2px;
     text-transform: uppercase;
@@ -56,7 +56,7 @@
 }
 
 .certificate-course-name{
-    font-family: "Source Serif 4",monospace;
+    font-family: "Source Serif 4",serif;
     font-size: 1.3rem;
     font-style: italic;
     color: var(--primary);
@@ -68,6 +68,7 @@
     font-size: 0.9rem;
     color: #aaa;
     margin: 4px 0 6px 0;
+	font-family: "Ioskeley Mono",monospace;
 }
 
 @media (width<445px) {
