@@ -556,7 +556,7 @@ section {
 
 }
 
-@media (height<675px) {
+@media (height<695px) {
 
 	#hero-img {
 		height: auto;
@@ -572,6 +572,12 @@ section {
 		align-items: center;
 	}
 
+}
+
+@media (height<1100px) {
+	#hero-img-2 {
+		transform: translateX(-50%) translateY(-35%);
+	}
 }
 
 
@@ -608,6 +614,8 @@ section {
 	#navbar {
 		padding: 0 22px;
 	}
+
+
 
 }
 
