@@ -9,7 +9,7 @@
 
 .about-me-h1 {
 	letter-spacing: -2px;
-    font-family: "Departure Mono","Ioskeley Mono",monospace;
+    font-family: "Departure Mono","JetBrains Mono",monospace;
     font-size: 3rem;
     text-transform: uppercase;
     width: 80%;
@@ -29,8 +29,8 @@
 }
 
 .card {
-    background: var(--bg);
-    color: white;
+    background: var(--background);
+    color: var(--text);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -38,9 +38,10 @@
     font-weight: bold;
     padding: 30px;
     /* border-radius: 10px; */
-    border: 1px solid var(--disabled);
+    border: 1px solid var(--background-300);
     min-height: 150px;
     gap: 15px;
+	position: relative;
 }
 
 .upper {
@@ -72,23 +73,23 @@
     inset: 0;
     height: 100%;
     width: 100%;
-    background-image: radial-gradient(#2c2c2c 1px, transparent 1px);
+    background-image: radial-gradient(var(--background-300) 1px, transparent 1px);
     z-index: -1;
     background-size: 16px 16px;
 }
 
 .b-tech-txt {
-    color: #f3f3f3;
+    color: var(--text);
     width: fit-content;
     margin: 0;
     padding-left: 5px;
-    font-family: "Departure Mono","Ioskeley Mono",monospace;
+    font-family: "Departure Mono","JetBrains Mono",monospace;
 }
 
 .it-txt {
     font-size: 2.5rem;
     color: var(--primary);
-    font-family: "Departure Mono","Ioskeley Mono",monospace;
+    font-family: "Departure Mono","JetBrains Mono",monospace;
     text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: -2px;
@@ -98,14 +99,14 @@
 }
 
 .intern-txt {
-    font-family: "Departure Mono","Ioskeley Mono",monospace;
+    font-family: "Departure Mono","JetBrains Mono",monospace;
 	font-weight: bold;
 	letter-spacing: -2px;
     font-size: 2.6rem;
     text-transform: uppercase;
     width: fit-content;
     padding: 6px 20px;
-    color: black;
+    color: var(--background);
     background: var(--primary);
 
 }
@@ -120,7 +121,7 @@
     top: 50%;
     left: 50%;
     display: flex;
-    transform: translateX(-50%) translateY(-50%) rotate(-40deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-40deg) skew(20deg,10deg);
     align-items: center;
     gap: 10px;
 }
@@ -137,12 +138,13 @@
     margin: 0;
     text-align: center;
     min-width: 50px;
-    border: #4b4b4b 1px solid;
+    border: var(--background-300) 1px solid;
     font-size: 0.7rem;
     background-color: var(--bg);
-	font-family: "Departure Mono","Ioskeley Mono",monospace;
+	font-family: "Departure Mono","JetBrains Mono",monospace;
 	text-transform: uppercase;
 	font-weight: 700;
+	transition: all 0.2s ease;
 }
 
 .bento-icon {
@@ -157,7 +159,7 @@
 }
 .bento-title {
     font-size: 1rem;
-    font-family: "Ioskeley Mono",monospace;
+    font-family: "JetBrains Mono",monospace;
     margin: 0 0 6px;
 }
 
@@ -175,7 +177,7 @@
     width: fit-content;
     align-items: center;
     justify-content: center;
-    max-width: 400px;
+    /* max-width: 400px; */
 }
 
 .account {
@@ -186,9 +188,9 @@
     gap: 8px;
     font-size: 1rem;
     font-weight: normal;
-    font-family: "Ioskeley Mono",monospace;
+    font-family: "JetBrains Mono",monospace;
     background: var(--bg);
-    border: var(--disabled) 1px solid;
+    border: var(--background-300) 1px solid;
     transition: 0.1s all linear;
 }
 
@@ -204,20 +206,20 @@
 
 #email {
     /* font-size: 1.2rem; */
-    border: 1px solid var(--disabled);
+    border: 1px solid var(--text);
     padding: 10px;
     background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Ioskeley Mono",monospace;
+    font-family: "JetBrains Mono",monospace;
     /* text-transform: uppercase; */
     margin: 0;
 }
 
 #copy-email {
-    border: 4px solid var(--disabled);
-    background: var(--disabled);
+    border: 1px solid var(--text);
+    background: var(--text);
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -229,7 +231,7 @@
     grid-column: span 2;
 }
 
-@media (width<=1170px) {
+@media (width<=1215px) {
     .bento-grid {
         grid-template-columns: 1fr;
         justify-items: center;
